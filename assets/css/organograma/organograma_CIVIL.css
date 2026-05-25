@@ -17,7 +17,7 @@
         /* Header Section */
         .page-header {
             /* background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #43a047 100%); */
-            background: linear-gradient(135deg, #154734 0%, #1f6b4a 55%, #3c8d63 100%);
+            background: linear-gradient(135deg, #112140 0%, #234e75 55%, #30709e 100%);
             background-size: cover;
             background-repeat: no-repeat;
             padding: 6rem 0 3rem;
@@ -69,7 +69,7 @@
 
         .instructions-card h5 {
             font-family: 'Montserrat', sans-serif;
-            color: #1a5f3a;
+            color: #234e75;
             font-weight: 700;
             margin-bottom: 1rem;
         }
@@ -104,14 +104,14 @@
             border: 2px solid #333;
         }
     h5 .text-success {
-     color: #1a5f3a !important;
+     color: #234e75 !important;
     }
         .legend-box.normal { 
-            background: linear-gradient(135deg, #1a5f3a3f 0%, #1a5f3a5b 100%);
-            border-color: #1a5f3a;
+            background: linear-gradient(135deg, #234e753f 0%, #234e755b 100%);
+            border-color: #234e75;
         }
         .legend-box.selected { 
-            background: linear-gradient(135deg, #1a5f3a 0%, #1a5f3a 100%);
+            background: linear-gradient(135deg, #234e75 0%, #234e75 100%);
         }
         .legend-box.prerequisite { 
             background: linear-gradient(135deg, #fff9c4 0%, #ffeb3b 100%);
@@ -140,12 +140,12 @@
         .semester-title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            color: #1a5f3a;
+            color: #234e75;
             font-size: 1.5rem;
             margin-bottom: 2rem;
             padding: 1rem 1.5rem;
-            background: linear-gradient(135deg, #1a5f3a31 0%, #1a5f3a98 100%);
-            border-left: 5px solid #1a5f3a;
+            background: linear-gradient(135deg, #234e7531 0%, #234e7598 100%);
+            border-left: 5px solid #234e75;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(35, 85, 119, 0.1);
         }
@@ -157,8 +157,8 @@
         }
 
         .subject {
-            background: linear-gradient(135deg, #1a5f3a3f 0%, #1a5f3a5b 100%);
-            border: 2px solid #1a5f3a;
+            background: linear-gradient(135deg, #234e753f 0%, #234e755b 100%);
+            border: 2px solid #234e75;
             border-radius: 12px;
             padding: 1.2rem;
             cursor: pointer;
@@ -182,36 +182,36 @@
             align-items: center;
             justify-content: center;
             background: rgba(255, 255, 255, 0.75);
-            color: #1a5f3a;
+            color: #234e75;
             text-decoration: none;
             transition: all 0.2s ease;
         }
 
         .subject-link:hover {
             background: white;
-            color: #0f4428;
+            color: #112140;
             transform: translateY(-1px);
         }
 
         .subject:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(35, 85, 119, 0.2);
-            border-color: #1a5f3a7c;
+            border-color: #234e757c;
         }
 
         .subject-name {
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 0.95rem;
-            color: #1a5f3a;
+            color: #234e75;
             text-align: center;
             line-height: 1.4;
         }
 
         /* Subject States */
         .subject.selected {
-            background: linear-gradient(135deg, #1a5f3a 0%, #1a5f3a 100%);
-            border-color: #1a5f3a;
+            background: linear-gradient(135deg, #234e75 0%, #234e75 100%);
+            border-color: #234e75;
             transform: scale(1.05);
             box-shadow: 0 8px 25px rgba(35, 85, 119, 0.2);
             z-index: 10;
@@ -222,7 +222,7 @@
         }
 
         .subject.selected .subject-link {
-            color: #1a5f3a;
+            color: #234e75;
         }
 
         .subject.prerequisite {
@@ -269,7 +269,7 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #1a5f3a 0%, #1a5f3a 100%);
+            background: linear-gradient(135deg, #234e75 0%, #234e75 100%);
             color: white;
             border: none;
             border-radius: 50px;

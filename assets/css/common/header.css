@@ -19,6 +19,32 @@
   color: #0f085a;
 } 
 
+.text-success {
+  color: #30709e !important;
+}
+
+.text-bg-success {
+  background-color: #234e75 !important;
+}
+
+.btn-success,
+.bg-success {
+  background-color: #234e75 !important;
+  border-color: #234e75 !important;
+}
+
+.btn-outline-success {
+  color: #234e75 !important;
+  border-color: #30709e !important;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:focus {
+  color: #fff !important;
+  background-color: #234e75 !important;
+  border-color: #234e75 !important;
+}
+
  .dropdown-menu {
   border: none;
   font-family: 'Montserrat', sans-serif;

@@ -1,7 +1,7 @@
 :root {
-    --ifsul-green: #1a5f3a;
-    --ifsul-green-light: #2d7a52;
-    --ifsul-green-dark: #0f4428;
+    --ifsul-green: #234e75;
+    --ifsul-green-light: #30709e;
+    --ifsul-green-dark: #112140;
     --ifsul-gray: #f8f9fa;
     --text-dark: #212529;
 }
@@ -229,7 +229,7 @@ body {
 
 .btn-group:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(26, 95, 58, 0.3);
+    box-shadow: 0 10px 25px rgba(35, 78, 117, 0.3);
     color: white;
 }
 

@@ -4,9 +4,9 @@
     box-sizing: border-box;
   }
   :root {
-    --ifsul-green: #1a5f3a;
-    --ifsul-green-light: #2d7a52;
-    --ifsul-green-dark: #0f4428;
+    --ifsul-green: #234e75;
+    --ifsul-green-light: #30709e;
+    --ifsul-green-dark: #112140;
     --gray-light: #f8f9fa;
     --text-dark: #212529;
 }
@@ -208,14 +208,14 @@ section.secaoteste
 }
 
 .nav-pills .nav-link:hover {
-    background: rgba(26, 95, 58, 0.1);
+    background: rgba(35, 78, 117, 0.1);
     color: var(--ifsul-green);
 }
 
 .nav-pills .nav-link.active {
     background: linear-gradient(135deg, var(--ifsul-green) 0%, var(--ifsul-green-light) 100%) !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(26, 95, 58, 0.3);
+    box-shadow: 0 4px 12px rgba(35, 78, 117, 0.3);
 }
 
 .bi.bi-clock-fill.text-primary {
@@ -316,7 +316,7 @@ section.secaoteste
 
 .col-md-4:first-child .card-front {
     border-color: var(--ifsul-green-light);
-    background: linear-gradient(135deg, rgba(26, 95, 58, 0.03) 0%, white 100%);
+    background: linear-gradient(135deg, rgba(35, 78, 117, 0.03) 0%, white 100%);
 }
 
 
