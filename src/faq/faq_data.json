@@ -1,0 +1,45 @@
+﻿[
+  {
+    "id": 1,
+    "category": "Geral",
+    "subcategory": "Institucional",
+    "question": "Onde fica o IFSul Câmpus Passo Fundo?",
+    "answer": "O IFSul Câmpus Passo Fundo está localizado na Avenida Perimetral Leste, 150, Bairro Brasília, Passo Fundo - RS."
+  },
+  {
+    "id": 2,
+    "category": "Geral",
+    "subcategory": "Institucional",
+    "question": "O curso é gratuito?",
+    "answer": "Sim. Os cursos do IFSul são gratuitos por se tratar de uma instituição pública federal de ensino."
+  },
+  {
+    "id": 3,
+    "category": "Engenharia Civil",
+    "subcategory": "Candidatos",
+    "question": "Qual a duração do curso de Engenharia Civil?",
+    "answer": "Nesta versão provisória, o curso está indicado com duração de 10 semestres. A informação deve ser confirmada com os documentos oficiais."
+  },
+  {
+    "id": 4,
+    "category": "Engenharia Civil",
+    "subcategory": "Candidatos",
+    "question": "Qual o turno das aulas?",
+    "answer": "Nesta versão inicial, o turno está indicado como noturno. Esse dado deve ser substituído pela informação oficial do curso."
+  },
+  {
+    "id": 5,
+    "category": "Engenharia Civil",
+    "subcategory": "Alunos",
+    "question": "Onde encontro a grade curricular?",
+    "answer": "A grade curricular está disponível no menu Curso > Grade Curricular. Por enquanto, ela contém uma matriz placeholder para validação do site."
+  },
+  {
+    "id": 6,
+    "category": "Engenharia Civil",
+    "subcategory": "Alunos",
+    "question": "Os documentos oficiais já estão disponíveis?",
+    "answer": "Ainda não. A página de documentos foi criada com cartões provisórios para receber os arquivos oficiais posteriormente."
+  }
+]
+
