@@ -9,7 +9,6 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Seção principal */
 #time {
   position: relative;
   background-color: rgba(211, 211, 211, 0.103);
@@ -17,7 +16,6 @@ body {
   padding: 4rem 0;
 }
 
-/* Cabeçalho da seção */
 .texto-head {
   background: rgba(255, 255, 255, 0.95) !important;
   padding: 3rem 2rem;
@@ -48,7 +46,6 @@ body {
   border-radius: 2px;
 }
 
-/* Container principal */
 .container.bg {
   background: rgba(255, 255, 255, 0.98);
   padding: 3rem;
@@ -57,7 +54,6 @@ body {
   backdrop-filter: blur(10px);
 }
 
-/* Iframe do calendário */
 .frame {
   width: 100%;
   height: 600px;
@@ -65,120 +61,54 @@ body {
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   background: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.frame:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+.pdf-frame {
+  height: 760px;
 }
 
-/* Card de download */
-.download-card {
-  background: linear-gradient(135deg, #234e75 0%, #30709e 100%);
-  padding: 2.5rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(35, 78, 117, 0.3);
-  text-align: center;
-  color: white;
-  height: 100%;
+.calendar-actions {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease;
+  margin-top: 1.5rem;
 }
 
-.download-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-  animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.download-card:hover {
-  transform: translateY(-5px);
-}
-
-.card-title-download {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.card-text-download {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-  opacity: 0.95;
-  position: relative;
-  z-index: 1;
-}
-
-/* Botão de download */
-.download-card .btn-primary {
-  background-color: white;
+.calendar-actions .btn-primary {
+  background-color: transparent;
   color: #234e75;
-  border: none;
-  padding: 1rem 2.5rem;
+  border: 1px solid rgba(35, 78, 117, 0.35);
+  padding: 0.65rem 1.25rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   border-radius: 50px;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  box-shadow: none;
 }
 
-.download-card .btn-primary:hover {
-  background-color: #f8f9fa;
-  color: #112140;
+.calendar-actions .btn-primary:hover {
+  background-color: #234e75;
+  color: #ffffff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(35, 78, 117, 0.22);
 }
 
-.download-card .btn-primary i {
+.calendar-actions .btn-primary i {
   margin-right: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
-/* Responsividade */
 @media (max-width: 992px) {
   .container.bg {
     padding: 2rem;
   }
 
-  .download-card {
-    margin-top: 2rem;
-    min-height: 300px;
-  }
-
   .frame {
     height: 500px;
-    margin-bottom: 2rem;
+  }
+
+  .pdf-frame {
+    height: 650px;
   }
 }
 
@@ -196,21 +126,12 @@ body {
     padding: 1.5rem;
   }
 
-  .card-title-download {
-    font-size: 1.5rem;
-  }
-
-  .card-text-download {
-    font-size: 1rem;
-  }
-
-  .download-card .btn-primary {
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
-  }
-
   .frame {
     height: 400px;
+  }
+
+  .pdf-frame {
+    height: 560px;
   }
 
   #time {
@@ -223,16 +144,15 @@ body {
     font-size: 1.5rem;
   }
 
-  .download-card {
-    padding: 2rem 1.5rem;
-  }
-
   .frame {
     height: 350px;
   }
+
+  .pdf-frame {
+    height: 480px;
+  }
 }
 
-/* Animação de entrada */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -247,8 +167,4 @@ body {
 .texto-head,
 .container.bg {
   animation: fadeInUp 0.8s ease-out;
-}
-
-.download-card {
-  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
