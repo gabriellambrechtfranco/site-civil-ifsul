@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,193 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/common/header.css">
-    <link rel="stylesheet" href="../../assets/css/bcc_professores/bcc_professores.css">
+    <link rel="stylesheet" href="../../assets/css/bcc_professores/civil_professores.css?v=20260605">
     <link rel="stylesheet" href="../../assets/css/common/footer.css">
 </head>
+
 <body>
     <div id="header-placeholder"></div>
-    <script>fetch('../header/index.html').then(r => r.text()).then(d => document.getElementById('header-placeholder').innerHTML = d);</script>
+    <script>
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+
     <main>
-        <section id="time" class="py-5 bg-light" style="margin-top: 70px;">
+        <section id="time" class="py-5 bg-light" style="margin-top: 50px;">
             <div class="container">
                 <h2 class="section-title">Professores</h2>
-                <p class="section-description mb-5">Lista provisória para compor o primeiro protótipo do portal.</p>
                 <hr class="divider mb-4">
                 <div class="row g-4">
-                    <div class="col-md-4"><div class="event-card text-center"><i class="bi bi-person-circle fs-1 text-success"></i><h4 class="event-title my-3">Profª. Helena Duarte</h4><p>Doutora em Estruturas</p><p>Interesses: concreto armado, análise estrutural e segurança de edificações.</p><a href="mailto:helena.duarte@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> helena.duarte@ifsul.edu.br</a></div></div>
-                    <div class="col-md-4"><div class="event-card text-center"><i class="bi bi-person-circle fs-1 text-success"></i><h4 class="event-title my-3">Prof. Marcos Veiga</h4><p>Mestre em Geotecnia</p><p>Interesses: solos, fundações, contenções e investigação geotécnica.</p><a href="mailto:marcos.veiga@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> marcos.veiga@ifsul.edu.br</a></div></div>
-                    <div class="col-md-4"><div class="event-card text-center"><i class="bi bi-person-circle fs-1 text-success"></i><h4 class="event-title my-3">Profª. Clara Nascimento</h4><p>Doutora em Saneamento</p><p>Interesses: recursos hídricos, drenagem urbana e sustentabilidade.</p><a href="mailto:clara.nascimento@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> clara.nascimento@ifsul.edu.br</a></div></div>
+                    <div class="col-md-4">
+                        <div class="card-container" tabindex="0">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="event-card text-center">
+                                        <img src="../../assets/img/Foto%20-%20Jair%20Santoro.jpeg" alt="Jair Frederico Santoro" class="speaker-image mb-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                                        <div class="placeholder-icon mb-3" style="display:none;" aria-hidden="true">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <h4 class="event-title mb-2">Jair Frederico Santoro</h4>
+                                        <p class="mb-2">Doutor</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <h5>Tópicos de Interesse:</h5>
+                                    <p class="text-justify">Construção civil, processos e técnicas construtivas e Engenharia de Segurança do Trabalho.</p>
+                                    <div class="social-links">
+                                        <a href="http://lattes.cnpq.br/0259020048138996" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>
+                                        <hr>
+                                        <a href="mailto:jairsantoro@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> jairsantoro@ifsul.edu.br</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-container" tabindex="0">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="event-card text-center">
+                                        <img src="../../assets/img/foto%20site%20eng%20Maris.jpeg" alt="Maristani Gampert Spannenberg" class="speaker-image mb-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                                        <div class="placeholder-icon mb-3" style="display:none;" aria-hidden="true">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <h4 class="event-title mb-2">Maristani Gampert Spannenberg</h4>
+                                        <p class="mb-2">Mestre em Engenharia</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <h5>Tópicos de Interesse:</h5>
+                                    <p class="text-justify">Geotecnia, Geologia, Mecânica dos Solos e Fundações.</p>
+                                    <div class="social-links">
+                                        <a href="http://lattes.cnpq.br/6975867183965871" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>
+                                        <hr>
+                                        <a href="mailto:maristaniformigheri@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> maristaniformigheri@ifsul.edu.br</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-container" tabindex="0">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="event-card text-center">
+                                        <img src="../../assets/img/Foto%20Francisco.jpg" alt="Francisco Lorenzini Neto" class="speaker-image mb-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                                        <div class="placeholder-icon mb-3" style="display:none;" aria-hidden="true">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <h4 class="event-title mb-2">Francisco Lorenzini Neto</h4>
+                                        <p class="mb-2">Mestre em Engenharia Civil - Recursos Hídricos e Saneamento Ambiental</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <h5>Tópicos de Interesse:</h5>
+                                    <p class="text-justify">Hidrologia, recursos hídricos, drenagem urbana de águas pluviais e técnicas avançadas de tratamento de águas.</p>
+                                    <div class="social-links">
+                                        <a href="http://lattes.cnpq.br/3133709378973050" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>
+                                        <hr>
+                                        <a href="mailto:francisconeto@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> francisconeto@ifsul.edu.br</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-container" tabindex="0">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="event-card text-center">
+                                        <img src="../../assets/img/Foto%20Ricardo%20Quevedo.png" alt="Ricardo Henryque Reginato Quevedo Melo" class="speaker-image mb-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                                        <div class="placeholder-icon mb-3" style="display:none;" aria-hidden="true">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <h4 class="event-title mb-2">Ricardo Henryque Reginato Quevedo Melo</h4>
+                                        <p class="mb-2">Mestre em Engenharia Civil e Ambiental; doutorando em Planejamento Urbano e Regional</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <h5>Tópicos de Interesse:</h5>
+                                    <p class="text-justify">Planejamento urbano e regional; geoprocessamento e análise espacial; mobilidade urbana; infraestrutura sustentável; micromobilidade urbana e cicloviária.</p>
+                                    <div class="social-links">
+                                        <a href="http://lattes.cnpq.br/5916413367217382" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>
+                                        <hr>
+                                        <a href="mailto:ricardomelo@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> ricardomelo@ifsul.edu.br</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-container" tabindex="0">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <div class="event-card text-center">
+                                        <img src="../../assets/img/sabrina.jpg" alt="Sabrina Elicker Hagemann" class="speaker-image speaker-image-sabrina mb-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                                        <div class="placeholder-icon mb-3" style="display:none;" aria-hidden="true">
+                                            <i class="bi bi-person-circle"></i>
+                                        </div>
+                                        <h4 class="event-title mb-2">Sabrina Elicker Hagemann</h4>
+                                        <p class="mb-2">Doutora</p>
+                                    </div>
+                                </div>
+                                <div class="card-back">
+                                    <h5>Tópicos de Interesse:</h5>
+                                    <p class="text-justify">Materiais e processos construtivos e projeto arquitetônico.</p>
+                                    <div class="social-links">
+                                        <a href="http://lattes.cnpq.br/1765602546954082" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>
+                                        <hr>
+                                        <a href="mailto:sabrinahagemann@ifsul.edu.br" class="download-link"><i class="bi bi-envelope"></i> sabrinahagemann@ifsul.edu.br</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <div id="footer-placeholder"></div><script>fetch('../footer/index.html').then(r => r.text()).then(d => document.getElementById('footer-placeholder').innerHTML = d);</script>
     </main>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('../footer/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script>
+        document.addEventListener('click', event => {
+            const downloadLink = event.target.closest('.download-link');
+            if (downloadLink) {
+                event.stopPropagation();
+                return;
+            }
+
+            const cardContainer = event.target.closest('.card-container');
+            if (cardContainer) {
+                cardContainer.querySelector('.card-inner')?.classList.toggle('is-flipped');
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key !== 'Enter' && event.key !== ' ') return;
+
+            const cardContainer = event.target.closest('.card-container');
+            if (!cardContainer) return;
+
+            event.preventDefault();
+            cardContainer.querySelector('.card-inner')?.classList.toggle('is-flipped');
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
