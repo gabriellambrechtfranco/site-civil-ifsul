@@ -21,7 +21,9 @@ body {
 .ensino-image {
         flex: 0 0 auto;
         width: 40%!important;
-        margin: 0,0,0,0!important;
+        margin-right: 48px!important;
+        overflow: hidden;
+        border-radius: 20px;
     }
 .hero-section {
     background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%);
@@ -134,8 +136,20 @@ body {
     transition: transform 0.3s ease;
 }
 
+.campus-image-horizontal {
+    display: block;
+    height: 360px;
+    object-fit: cover;
+    object-position: 42% 70%;
+    transform: scale(1.28);
+}
+
 .campus-image:hover {
     transform: scale(1.02);
+}
+
+.campus-image-horizontal:hover {
+    transform: scale(1.3);
 }
 
 .courses-section {
@@ -381,6 +395,13 @@ body {
 
 
 
+@media (max-width: 991px) {
+    .ensino-image {
+        width: 100%!important;
+        margin-right: 0!important;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;
@@ -396,6 +417,10 @@ body {
 
     .course-card {
         margin-bottom: 30px;
+    }
+
+    .campus-image-horizontal {
+        height: 260px;
     }
 
     .carousel-item img {

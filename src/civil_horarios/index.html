@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../assets/css/common/header.css">
     <link rel="stylesheet" href="../../assets/css/common/footer.css">
     <link rel="stylesheet" href="../../assets/css/Cursos/bcc.css">
+    <link rel="stylesheet" href="../../assets/css/Cursos/civil-horarios.css">
 </head>
 
 <body>
@@ -23,10 +24,38 @@
     </script>
 
     <main>
-        <section class="py-5 bg-light" style="margin-top:70px;">
+        <section id="time" class="py-5 bg-light" style="margin-top:70px;">
             <div class="container">
                 <h2 class="section-title">Horários</h2>
-                <p class="section-description mb-0">Os horários oficiais serão disponibilizados em breve.</p>
+                <p class="section-description">Confira os horários oficiais do curso de Engenharia Civil.</p>
+                <div class="schedule-group">
+                    <div class="schedule-heading">
+                        <span class="schedule-icon"><i class="bi bi-moon-stars"></i></span>
+                        <h3 class="schedule-title">Engenharia Civil - Noturno</h3>
+                    </div>
+                    <div class="schedule-frame-wrapper">
+                        <iframe
+                            src="https://painel.passofundo.ifsul.edu.br/iframes/horarios.php?curso=25"
+                            title="Horários Engenharia Civil Noturno"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <a class="schedule-link" href="https://painel.passofundo.ifsul.edu.br/iframes/horarios.php?curso=25" target="_blank" rel="noopener noreferrer">Abrir horário noturno em nova aba</a>
+                </div>
+                <div class="schedule-group">
+                    <div class="schedule-heading">
+                        <span class="schedule-icon"><i class="bi bi-sun"></i></span>
+                        <h3 class="schedule-title">Engenharia Civil - Diurno</h3>
+                    </div>
+                    <div class="schedule-frame-wrapper">
+                        <iframe
+                            src="https://painel.passofundo.ifsul.edu.br/iframes/horarios.php?curso=17"
+                            title="Horários Engenharia Civil Diurno"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <a class="schedule-link" href="https://painel.passofundo.ifsul.edu.br/iframes/horarios.php?curso=17" target="_blank" rel="noopener noreferrer">Abrir horário diurno em nova aba</a>
+                </div>
             </div>
         </section>
     </main>

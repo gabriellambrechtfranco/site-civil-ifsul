@@ -1,0 +1,64 @@
+.schedule-group {
+    margin-top: 2.5rem;
+}
+
+.schedule-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.schedule-title {
+    color: var(--ifsul-green);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.schedule-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(35, 78, 117, 0.1);
+    color: var(--ifsul-green);
+    font-size: 1.35rem;
+}
+
+.schedule-frame-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.schedule-frame-wrapper iframe {
+    display: block;
+    width: 100%;
+    min-height: 720px;
+    border: 0;
+    background: #fff;
+}
+
+.schedule-link {
+    display: inline-flex;
+    margin-top: 0.85rem;
+    color: var(--ifsul-green);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.schedule-link:hover {
+    color: var(--ifsul-green-dark);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .schedule-frame-wrapper iframe {
+        min-height: 560px;
+    }
+}
